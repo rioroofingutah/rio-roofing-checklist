@@ -768,7 +768,7 @@ async function submitChecklist() {
     job_address: jobAddress,
     supervisor: supervisor,
     job_date: jobDate,
-    note: noteText
+    note: noteText.replace(/\r?\n/g, ' | ')
   };
 
   try {
